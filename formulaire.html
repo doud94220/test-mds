@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="enregistrement.php" method="POST">
+        <p><label for="nom"> Nom :</label>
+            <input type="text" required="required" pattern="[a-zA-Z'-]{2,50}" name="nom" size='30' maxlength='50'
+                value="" />
+        </p>
+        <p><label for="prenom"> Prénom :</label>
+            <input type="text" required="required" pattern="[a-zA-Z'device-width]{2,50}" name="prenom" size='30'
+                maxlength='50' value="" />
+        </p>
+        <p>
+            <label for="date-naissance"> Date de naissance :</label>
+            <input type="text" id="date-naissance" name="date-naissance" size='15' maxlength='15' autocomplete="off"
+                placeholder="Format jj/mm/aaaa" pattern="[0-3]{1}[0-9]{1}/[0-1]{1}[0-9]{1}/\d{4}" value=""
+                required="required" />
+        </p>
+        <div>
+            <span class="label">Possédez vous un chien ? :</span>
+            <input type='radio' name="verif-possede-chien" value="oui" />
+            <label for="un-chien"">Oui</label>
+            <input type='radio' name=" verif-possede-chien" value="non" />
+            <label for="pas-de-chien">Non</label>
+        </div>
+        <br>
+        <label for="pays">Pays :</label>
+        <select name="pays">
+            <option value="France">France</option>'
+            <option value="Espagne">Espagne</option>'
+            <option value="Allemagne">Allemagne</option>'
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Enregistrer">
+    </form>
+</body>
+
+</html>
